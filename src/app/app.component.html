@@ -1,16 +1,2 @@
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="assets/tree.jpeg" alt="tree">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media-content">
-      <p class="title is-4">Neat Tree</p>
-      <p class="subtitle is-6">@natural</p>
-    </div>
-    <div class="content">
-      Saw this awesome tree growing in my backyard.  It is so much nicer than the last tree I saw.
-    </div>
-  </div>
-</div>
+<app-card *ngFor="let post of posts" [title]="post.title" [imageUrl]="post.imageUrl" [username]="post.username"
+  [content]="post.content"></app-card>

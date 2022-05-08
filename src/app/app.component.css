@@ -1,3 +1,10 @@
-.card {
-  width: 350px;
+/*this doesn't work*/
+/* app-root {
+  display: flex; 
+} */
+/*this works*/
+:host {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
